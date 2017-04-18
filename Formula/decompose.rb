@@ -2,10 +2,11 @@ class Decompose < Formula
   desc "Templating framework to help developers easily create and switch environments"
   homepage "https://github.com/dmp1ce/decompose"
   url "https://github.com/dmp1ce/decompose.git", :tag => "v0.18.1", :revision => "691e7cd09bd7eefbc3cca0e2e628e1704594b860"
-  head "https://github.com/sstephenson/bats.git"
+  #head ""
 
   bottle :unneeded
   depends_on "coreutils"
+  depends_on "bash_completion" => :optional
 
   def install
     # TODO: use txt2man to generate man file
